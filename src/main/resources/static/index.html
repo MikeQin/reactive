@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reactive Web Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script type="text/javascript" async="" src="app.js"></script>
+</head>
+<body>
+<section class="section">
+    <div class="container mb-2">
+        <h1 class="title">
+            Reactive Web Demo
+        </h1>
+    </div>
+    <div class="container">
+        <h2 class="subtitle">
+            Latest updated Greetings
+        </h2>
+        <div class="column has-background-white-ter m-2">
+			<div class="columns">
+	        <label class="label">Number<input class="input" id="num-input" type="number" placeholder="5"></label>
+			</div>
+			<button class="button" id="start-button">Start Server-sent Events</button>
+	        <button class="button" id="stop-button">Stop Server-sent Events</button>
+        </div>
+        <table class="table is-bordered is-striped is-fullwidth">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Value</th>
+            </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </div>
+</section>
+</body>
+</html>
